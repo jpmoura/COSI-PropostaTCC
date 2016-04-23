@@ -1,0 +1,114 @@
+% !TeX spellcheck = pt_BR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modelo de Proposta de Trabalho de Conclusão de Curso do Colegiado de Sistemas de Informação, peterncente ao
+% Departamento de Computação e Sistemas de Informação (DECSI) da Universidade Federal de Ouro Preto (UFOP)
+%
+% LaTeX Template
+%
+% Versão 1.0 (22/04/2016)
+%
+% Autor Original:
+% João Pedro Santos de Moura
+% (https://github.com/jpmoura)
+%
+% Licença:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACOTES E CONFIGURAÇÃO
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{decsi-cosi}
+
+\usepackage[brazil]{babel}                   % Pacote de vocabulário/internacionalização
+\usepackage[utf8]{inputenc}                  % Pacote para codificação do texto em UTF-8
+\usepackage[T1]{fontenc}                     % Pacote para codificação da fonte em artefatos DVI, PS e PDF
+\usepackage{cmap}                            % Pacore para mapear caracteres especiais no documento fonte
+\usepackage{textcomp,marvosym}               % Pacote para caracteres adicionais
+\usepackage[brazilian,hyperpageref]{backref} % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}                % Citações padrão ABNT
+
+%----------------------------------------------------------------------------------------
+%	COMANDOS
+%----------------------------------------------------------------------------------------
+
+% Opções de metainfo do artefato gerado
+\hypersetup{
+	bookmarks=true,                           % Abrir aba de marcações de seções/capítulos no Acrobat Reader 
+	unicode=true,                             % Caracteres latinos nos marcadores
+	pdftoolbar=true,                          % Exibe a barra de ferramentas do Acrobat
+	pdfmenubar=true,                          % Exibe o menu do Acrobat
+	pdffitwindow=false,                       % A janela não se ajusta ao tamanho da página
+	pdfstartview={FitH},                      % Ajusta a largura da página com o tamanho da janela de visualização
+	pdftitle={Modelo de Proposta de TCC},     % Título
+	pdfauthor={João Pedro Santos de Moura},   % Autor
+	pdfsubject={Modelo LaTeX do COSI (UFOP) de Proposta de TCC}, % Assunto
+	pdfcreator={pdflatex},  				  % Sistema de criação do PDF
+	pdfproducer={LaTeX com hyperref}, 		  % Sistema em que foi produzido o Produtor
+	pdfkeywords={LaTeX, Universidade Federal de Ouro Preto, Proposta de Trabalho de Conclusão de Curso, Modelo, Departamento de Computação e Sistemas de Informação}, % Lista de palavras-chave separadas por vírgula
+	pdfnewwindow=true,                        % Links abrem em uma nova janela
+	colorlinks=false,                         % false: links envoltos em uma caixa colorida; true: texto dos links coloridos
+	linkcolor=red,                            % Cor de links internos (change box color with linkbordercolor)
+	citecolor=green,                          % Cor de links para bibliografia
+	filecolor=magenta,                        % Cor de links para arquivos
+	urlcolor=cyan                             % Cor de links externos (url)
+}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	\begin{center}
+		\textbf{\uppercase{Proposta de Orientação de TCC}}
+	\end{center}
+	
+	%\textbf{Aluno:} João Pedro Santos de Moura \hspace*{1in}\textbf{Matrícula:} 11.1.8338
+	\aluno{Nome do Aluno}{Matrícula do aluno}
+	
+	\orientador{Nome do orientador}
+	
+	% Comente ou apague o comando seguinte caso não possua coorientador
+	\coorientador{Nome do coorientador, caso exista}
+	
+	\disciplina{Nome da disciplina, exemplo: Sistemas de informação}
+	
+	\titulo{Título provisório do trabalho de conclusão.}
+	
+	\area{Codigo}{De acordo com as áreas CAPES/CNPQ}
+	
+	\tema
+	
+	Um parágrafo descrevendo o tema.\\
+	
+	\objetivos
+	
+	Descrição dos objetivos gerais e específicos.\\
+	
+	\problema
+	
+	Identificação do problema a ser abordado no projeto.\\
+	
+	% Cada coluna equivale um mês, por exemplo, a primeira coluna equivale ao mês 1.
+	\abreCronograma
+		Primeira Atividade & X & X & X & X & X & X & X & X & X & X & X &  \\ \hline
+		Segunda Atividade  &   & X & X &   &   &   &   &   &   &   &   &  \\ \hline
+		...                &   &   &   & X & X & X &   &   &   &   &   &  \\ \hline
+		Última Atividade   &   &   &   &   &   &   & X & X &   &   &   &  \\ \hline
+	\fechaCronograma
+	
+	(Cronograma de atividades para 12 meses, no caso de TCC1, devendo ser ajustado para a conclusão em 06 meses, no caso de TCC2)
+	
+	\referencias
+	\bibliography{referencias}
+	\nocite{EIA649B,abntex2classe,abntex2modelo-artigo,masolo2010,memoir}
+	
+	% O paramêtro corresponde ao espaçamento para o elemento textual imediatamente anterior.
+	% Ajuste conforme sua necessidade. Os valores então em polegadas.
+	\assinaturaOrientador{0.7in}
+	
+	\assinaturaCoorientador{1in}
+	
+\end{document}
