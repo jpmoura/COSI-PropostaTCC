@@ -17,5 +17,5 @@ da clase `decsi-cosi` que é chamado *decsi-cosi.cls*.
   tabela de cronograma usar todo espaço de texto;
 * Criar um comando que facilite a entrada de atividades juntamente meses
   que ela está relacionada;
-* Mudar a forma como o título da seção de referências é exibido pelo
-  comando `\referencias`
+* ~~Mudar a forma como o título da seção de referências é exibido pelo
+  comando `\referencias`~~

@@ -33,6 +33,7 @@
 %-----------------------
 % PACOTES NECESSÁRIOS
 %-----------------------
+\RequirePackage{titlesec}         % Pacote para alterar ambiente de títulos
 \RequirePackage{tabu}             % Pacote de tabelas
 \RequirePackage{xcolor}           % Pacote de cores
 \RequirePackage{helvet}           % Pacote para alterar a fonte
@@ -92,6 +93,8 @@
 	
 \pagestyle{UfopDecsiCosi} % Ativa o estilo de cabeçalho e rodapé
 
+\titleformat*{\section}{\fontsize{11}{13.2}\selectfont\bfseries} % Muda o tamanho da fonte das seções
+\titlespacing*{\section}{0pt}{0\baselineskip}{\baselineskip} % Muda o espaçamento do título das referências
 %-----------------------
 % COMANDOS FORNECIDOS
 %-----------------------
@@ -134,7 +137,9 @@
 							
 \newcommand{\fechaCronograma}{\end{tabular}\\}
 
-\newcommand{\referencias}{\renewcommand{\section}[2]{\textbf{Refer{\^{e}}ncias Bibliogr{\'{a}ficas}}}}
+\newcommand{\referencias}[1]{\renewcommand\refname{Refer{\^{e}}ncias Bibliogr{\'{a}}ficas}%
+							 \bibliography{#1}
+							 }
 
 \newcommand{\assinaturaOrientador}[1]{%
 								      \begin{center}
@@ -151,3 +156,4 @@
 											Assinatura do Professor Coorientador
 										\end{center}
 									   }
+									   
